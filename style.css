@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+@font-face {
+    font-family: "norse";
+    src: url(Norse-Bold.otf);
+}
+
+body{
+    font-family: Roboto;
+}
+
+.pageContainer{
+    display: flex;
+}
+
+.leftSideContainer{
+    background-image: url(grass.jpg);
+    background-size: cover;
+    width: 30%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.odinContainer{
+    background-color: rgba(0, 0, 0, 0.425);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+    padding: 25px 0px;
+}
+
+.odinContainer img{
+    width: 18%;
+}
+
+.odinContainer span{
+    font-size: 8rem;
+    color: white;
+    font-family: "norse";
+}
+
+.leftFooter{
+    height: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.leftFooter span, a{
+    color: rgba(252, 252, 252, 0.884);
+    font-size: 1rem;
+}
+
+.rightSideContainer{
+    flex: 1;
+}
+
+
+
+.topTextContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin-left: 60px;
+    height: 30vh;
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-bottom: 80px;
+}
+
+.topTextContainer :last-child{
+    margin-top: 40px;
+
+
+}
+
+
+
+
+.formContainer{
+    padding: 10px 60px 30px;
+    background-color: white;
+    box-shadow: 3px 3px 5px rgb(131, 130, 130);
+    width: 100%;
+}
+
+form h1{
+    margin-bottom: 20px;
+    color: rgba(65, 65, 82, 0.966);
+}
+
+.formSidesContainer{
+   display: flex;
+   gap: 250px;
+}
+
+.leftForms,.rightForms{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label{
+    display: block;
+    letter-spacing: 2px;
+    color: rgba(65, 65, 73, 0.897);
+    font-weight: bold;
+}
+
+input{          
+    border: 1px rgba(128, 128, 128, 0.397) solid;
+    padding: 10px 20px;
+    width: 150%;
+    border-radius: 5px;
+    font-size: 1.5rem;
+}
+
+input:focus{
+   border: rgba(0, 255, 157, 0.205) groove;
+}
+
+.buttonContainer{
+    margin-top: 40px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+}
+
+button{
+    font-size: 1.7rem;
+    padding: 25px 80px;
+    border-radius: 15px;
+    border: none;
+    background-color: #596D48;
+    color: rgba(255, 255, 255, 0.829);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover{
+     background-color: #3a4e28;
+
+}
+button:active{
+    font-size: 2rem;
+}
+
+.buttonContainer span{
+    font-size: 2rem;
+}
+
+.login{
+    color: #3a4e28;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input[type="password"]:invalid{
+    padding: 10px 20px;
+    width: 150%;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    border: red 1px solid;
+}
+
+
+.Password input:invalid+span::after{
+    display: block;
+    content: "*Passwords do not match";
+    color: red;
+    font-size: 1.5rem;
+    }
+
+
+.Phone > label::after{
+    content: "(Optional)";
+    color: hsla(120, 100%, 25%, 0.644);
+
+}
+
+
+
